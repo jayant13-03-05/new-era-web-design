@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#F0F2F5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: 1fr 1fr;       
+            padding: 180px;
+            padding-top: 140px;
+            align-items: center;
+        }
+        
+        .right-div{
+            text-align: right;
+           
+            
+        }
+        .right-box{
+            background-color: white;
+            height: 400px;
+            width: 80%;
+            float: right;
+            margin-right: 5px;
+            border-radius: 10px;
+            box-shadow: 0 2px 2px rgb(205, 198, 198);
+            
+        }
+        .fb-text{
+            
+            font-size: 65px;
+            font-weight: 600;
+            color: blue;
+            margin: 0;
+            padding: 0;
+        }
+        .fb-desc{
+            font-size: 30px;
+            margin-top: 13px;
+            padding: 0;
+        }
+        .text{
+            height: 60px;
+            width: 400px;
+            padding: 22px;
+            margin-right: 25px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 2px solid blue;
+            font-size: 20px;
+        }
+        .text:focus{
+            border: 2px solid blue;
+        }
+        .pass{
+            height: 60px;
+            width: 400px;
+            margin-top: 20px;
+            margin-right:25px;
+            font-size: 20px;
+            padding: 20px;
+            border: 2px solid blue;
+            border-radius: 10px;
+        }
+        .log-in{
+            height: 60px;
+            width: 400px;
+            margin-top: 20px;
+            margin-right: 25px;
+            font-size: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color:  blue;
+            border: 0px solid;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .forget{
+            color: blue;
+            margin-right: 150px;
+        }
+        .row{
+            width: 400px;
+            border: 1px solid light rgb(157, 157, 218);
+        }
+        .account{
+            height: 60px;
+            width: 220px;
+            margin-right: 120px;
+            margin-top: 15px;
+            background-color: rgb(55, 194, 55);
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            border-radius: 10px;
+            border: 0px solid;
+        }
+     </style>   
+</head>
+<body>
+    <div class="main">
+        <div class="left-div">
+            <p class="fb-text">facebook</p>
+            <p class="fb-desc">Facebook helps you connect and share with the people in your life.</p>
+        </div>
+        <div class="right-div">
+            <div class="right-box">
+                <input class="text" type="search" placeholder="Email address or phone number">
+                <input class="pass" type="search" placeholder="Password">
+                <input class="log-in" type="button" value="Log in">
+                <p class="forget">forgotten password?</p>
+                <hr class="row">
+                <input class="account" type="button" value="create new account">
+            <div>
+        </div>
+    </div>
+</body>
+</html>
