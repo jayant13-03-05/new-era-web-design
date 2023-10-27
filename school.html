@@ -111,15 +111,42 @@
         }
         .houses{
              margin-top: 200px; 
-             display: gird;
+             display: grid;
              grid-template-columns: 1fr 1fr 1fr 1fr;
              column-gap: 20px;
+             text-align: center;
          }
-        .anything{
-            list-style-type: none;
+        .three{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            text-align: center;
+            height: 450px;
+            margin-left: 90px;
+            margin-right:90px;
+            margin-top: 80px;
         }
-        .anything li{
-            float: left;
+        .gallery{
+            background-color:#E1427E;
+        }
+        .notice{
+            background-color: #4B9AD9;
+        }
+        .school{
+            background-color: #745EBB;
+        }
+        .gallery{
+            font-size: 23px;
+            color: white;
+            font-family: arial;
+        }
+        .gallery-img{
+            height: 50px;
+            width: 100%;
+        }
+        .gallery-thumb{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
         }
         </style>
 </head>
@@ -174,15 +201,23 @@
         </div>   
     </div>
     <div class="houses">
-        <ul class="anything">
-            <li><a href=""><img src="img/nehru.png"></a></li>
-            <li><a href=""><img src="tagore.png"></a></li>
-            <li><a href=""><img src="gandhi.png"></a></li>
-            <li><a href=""><img src="subhash.png"></a></li>
-        </ul>
+        <div><img src="img/nehru.png"></div>
+        <div><img src="tagore.png"></div>
+        <div><img src="gandhi.png"></div>
+        <div><img src="subhash.png"></div>
+    </div>
+    <div class="three">
+        <div class="gallery">
+           <p><u><center>PHOTO GALLERY</center></u></p>
+           <div class="gallery-thumb">
+                <img class="gallery-img" src="123.png">
+                <img class="gallery-img" src="1595428307.png">
+                <img class="gallery-img" src="gandhi.png">
+           </div>
+        </div>
+        <div class="notice">bbb</div>
+        <div class="school">ccc</div>
     </div>
 </div>
-    <!--Topm bar green ends here-->
-     
 </body>
 </html>
