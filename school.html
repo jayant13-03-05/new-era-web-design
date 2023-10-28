@@ -78,7 +78,7 @@
             margin-top: 35px;
         }
         .back{
-         
+            background-color: #2FB2FF;
             height: 300px;
             width: 100%;
             position: relative;
@@ -128,25 +128,43 @@
         }
         .gallery{
             background-color:#E1427E;
-        }
-        .notice{
-            background-color: #4B9AD9;
-        }
-        .school{
-            background-color: #745EBB;
-        }
-        .gallery{
             font-size: 23px;
             color: white;
             font-family: arial;
         }
+        .notice{
+            background-color: #4B9AD9;
+            font-size: 23px;
+            color: white;
+            font-family: arial;
+        }
+        .school{
+            background-color: #745EBB;
+        }
         .gallery-img{
-            height: 50px;
-            width: 100%;
+            height: 100px;
+            width: 100px;
+            margin-left: 20px;
         }
         .gallery-thumb{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 15px;
+        }
+        .one{
+            list-style-type: none;
+        }
+        .one li{
+            text-align: center;
+            color: blue;
+            margin: 0;
+            padding:0;
+            background-color: antiquewhite;
+            font-size: 17px;
+            align-items: center;
+            margin-right: 25px;
+            padding: 10px;
+            
         }
         </style>
 </head>
@@ -210,12 +228,23 @@
         <div class="gallery">
            <p><u><center>PHOTO GALLERY</center></u></p>
            <div class="gallery-thumb">
-                <img class="gallery-img" src="123.png">
-                <img class="gallery-img" src="1595428307.png">
-                <img class="gallery-img" src="gandhi.png">
+                <img class="gallery-img" src="img/first.jpg">
+                <img class="gallery-img" src="img/second.jpg">
+                <img class="gallery-img" src="img/third.jpg">
+                <img class="gallery-img" src="img/four.jpg">
+                <img class="gallery-img" src="img/five.jpg">
+                <img class="gallery-img" src="img/six.jpg">
+                <img class="gallery-img" src="img/seven.jpg">
+                <img class="gallery-img" src="img/eight.jpg">
+                <img class="gallery-img" src="img/nine.jpg">
            </div>
         </div>
-        <div class="notice">bbb</div>
+        <div class="notice">
+            <p>NOTICE BOARD</p>
+            <ul class="one">
+                <li>Inter Class Activity Purpet Making (Class I-III) , Face Mask (Class IV-V) Model Of Ram & Rawan (Class VI-V) Dated: 20/10/2023</li>
+                </ul>
+        </div>
         <div class="school">ccc</div>
     </div>
 </div>
