@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .first{
+        .first {
             background-color: red;
             margin: 10px;
             padding: 10px;
             font-size: 10px;
             font-family: Arial, Helvetica, sans-serif;
         }
-        .second{
+
+        .second {
             background-color: blue;
             margin: 100px;
             padding: 100px;
             font-size: 30px;
             font-family: 'Times New Roman', Times, serif;
         }
-    </style>
-    <script>
-        function setcolor()
-        {
-            document.getElementById("txtcolor").classList.add('first');
+
+        .third {
+            background-color: yellow;
+            margin: 400px;
+            padding: 400px;
+            font-size: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
+        .four {
+            background-color: pink;
+            margin: 50px;
+            padding: 50px;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <script>
+        function setcolor() {
+            document.getElementById("txtcolor").classList.add('first');
+        }
+        function setcolor2() {
+            document.getElementById("txtcolor").classList.add('second');
+        }
+        function setcolor3() {
+            document.getElementById("txtcolor").classList.add('third');
+        }
+        function setcolor4() {
+            document.getElementById("txtcolor").classList.add('four');
+        }
 
     </script>
 </head>
+
 <body>
     <input type="text" id="txtcolor">
     <button onclick="setcolor()">Apply Color</button>
+    <button onclick="setcolor2()">Apply Color</button>
+    <button onclick="setcolor3()">Apply Color</button>
+    <button onclick="setcolor4()">Apply Color</button>
 </body>
+
 </html>
