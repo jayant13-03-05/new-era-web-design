@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc()
+        {
+            var p=parseInt(prompt('Enter principal'));
+            var r=parseInt(prompt('Enter rate'));
+            var t=parseInt(prompt('Enter time'));
+            var si=p*r*t/100;
+            alert(si);
+        }
+        function area()
+        {
+            var l=parseInt(prompt('Enter length'));
+            var b=parseInt(prompt('Enter breath'));
+            var tot=l*b;
+            alert(tot);
+        }
+        function circle()
+        {
+            var pi=3.14;
+            var r=parseInt(prompt('Enter rad'));
+            var tat=pi*r*r;
+            alert(tat);
+        }
+        
+    </script>
+</head>
+
+<body onload="circle()">
+    
+</body>
+</html>
