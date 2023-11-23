@@ -28,15 +28,50 @@
         alert('not leap year')
     }
     function tst() {
-      var a = parseInt(prompt('Enter age'));
-      if (age > 18);
+      var day = parseInt(prompt('Enter Month no'));
+      if (day==1)
+         alert('january');
+      else if(day==2)
+          alert('february');
+      else if(day==3)
+      alert('march');
+      else if(day==4)
+      alert('april');
+      else if(day==5)
+      alert('may');
+      else if(day==6)
+      alert('june');
+      else if(day==7)
+      alert('july');
+      else if(day==8)
+      alert('august');
+      else if(day==9)
+      alert('september');
+      else if(day==10)
+      alert('october');
+      else if(day==11)
+      alert('november');
+      else if(day==12)
+      alert('december');
       else
-        alert('You are eligible');
+      alert('wrong choice');     
+    }
+    function ques()
+    {
+      var price=parseInt(prompt('Enter price'));
+      var qty=parseInt(prompt('Enter qty'));
+      var cost=price*quantity;
+      var dis=0;
+      if(cost>1000)
+        dis=10/100*cost;
+      cost=cost-dis;
+      alert('You have to pay Rs.'+cost);
+      
     }
   </script>
 </head>
 
-<body onload="tst()">
+<body onload="ques()">
 
 </body>
 
