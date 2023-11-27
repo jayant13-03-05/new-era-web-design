@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>c
+    <style>
+        body {
+            margin-left: 210px;
+            margin-top: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 2000px;
+        }
+
+        .main {
+            position: relative;
+        }
+
+        .header {
+            background-color: red;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            z-index: 10000;
+        }
+
+        .sidebar {
+            background-color: blue;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 200px;
+            margin-top: 50px;
+
+        }
+
+        .videos {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 20px;
+            z-index: 5000;
+        }
+
+        .thumb {
+            position: relative;
+            height: auto;
+        }
+
+        .thumbnail {
+            width: 100%;
+            border-radius: 20px;
+            height: 220px;
+        }
+
+        .prof-icon {
+            height: 40px;
+            width: 40px;
+            border-radius: 40px;
+        }
+
+        .title {
+            display: grid;
+            grid-template-columns: 50px 1fr 20px;
+            column-gap: 10px;
+            align-items: center;
+        }
+
+        .song-title {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+            color: rgb(65, 60, 60)
+        }
+
+        .sub-title {
+            padding-left: 60px;
+            color: rgb(75, 72, 72)
+        }
+
+        .views {
+            padding-left: 60px;
+
+        }
+
+        .timer {
+            position: absolute;
+            right: 20px;
+            top: 60%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 2px;
+            width: 40px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            header
+        </div>
+        <div class="sidebar">sidebar</div>
+        <div class="videos">
+            <div class="thumb">
+                <img class="thumbnail" src="1595428307.png">
+                <div class="timer">3:40</div>
+                <div class="title">
+                    <img class="prof-icon" src="1595428307.png" alt="">
+                    <p class="song-title">Chal Tere Ishq Mein Pad Jaate Hain - Gadar 2 | Utkarsh Sharma, Simrat...</p>
+                    <p><i class="fa fa-ellipsis-v" style="font-size:24px"></i></p>
+                </div>
+                <div class="sub-title">
+                    Ps Black Music
+                </div>
+                <div class="views">
+                    162k views &#8226; 2 days ago
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
