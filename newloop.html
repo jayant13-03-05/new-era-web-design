@@ -104,15 +104,15 @@
   </style>
   <script>
     function repeatVideos() {
-      var s = 1;
-      for (i = 1; i <= 50; i++)
-        s = s + i;
+      var s=1;
+      for (i=1;i<11;i++)
+          s = s+1/(Math.pow(i,i));
       document.getElementById("videos").innerHTML = s;
     }
   </script>
 </head>
 
-<body onload="Videos()">
+<body onload="repeatVideos()">
   <div class="main">
     <div class="videos" id="videos">
 
@@ -134,7 +134,7 @@
 
     </div>
 
-  </div>hiii
+  </div>
 </body>
 
 </html>
