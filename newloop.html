@@ -103,57 +103,34 @@
     }
   </style>
   <script>
-    function repeatVideos() {   
-      var s = "";
-      for(i = 0; i <15 ; i++ )
-        s= i * i;
-      document.getElementById("videos").innerHTML = s;
-    }
-
-
     function prac()
     {
-      var s="",i,j;
-    
-      for(i=1;i<=3;i++)
-      {
-        for(j=1;j<=3;j++)
-        {
-        
-          
-        }
-        
-      }
-     console.log("Hello i="+i+"j="+j); 
+      var s=`<div class="thumb">
+              <img class="thumbnail" src="1595428307.png">
+              <div class="timer">3:40</div>
+              <div class="title">
+                <img class="prof-icon" src="1595428307.png" alt="">
+                <p class="song-title">Chal Tere Ishq Mein Pad Jaate Hain - Gadar 2 | Utkarsh Sharma, Simrat...</p>
+                <p><i class="fa fa-ellipsis-v" style="font-size:24px"></i></p>
+              </div>
+              <div class="sub-title">
+                Ps Black Music
+              </div>
+              <div class="views">
+                162k views &#8226; 2 days ago
+              </div>
+            </div>`;
+            for(i=0;i<10;i++)
+            document.getElementById("loop").innerHTML+=s
     } 
-    function tst() {
-      var a = 2;
-      var s = 0;
-      for (i = 1; i < 11; i++)
-        s = s + Math.pow(a, i) / i;
-      document.getElementById("videos").innerHTML = s;
-    }
   </script>
 </head>
 
 <body onload="prac()">
   <div class="main">
     <div class="videos" id="loop">
-      <div class="thumb">
-        <img class="thumbnail" src="1595428307.png">
-        <div class="timer">3:40</div>
-        <div class="title">
-          <img class="prof-icon" src="1595428307.png" alt="">
-          <p class="song-title">Chal Tere Ishq Mein Pad Jaate Hain - Gadar 2 | Utkarsh Sharma, Simrat...</p>
-          <p><i class="fa fa-ellipsis-v" style="font-size:24px"></i></p>
-        </div>
-        <div class="sub-title">
-          Ps Black Music
-        </div>
-        <div class="views">
-          162k views &#8226; 2 days ago
-        </div>
-      </div>
+      
+     
     </div>
   </div>
 </body>
