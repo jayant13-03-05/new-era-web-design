@@ -105,23 +105,15 @@
   <script>
     function prac()
     {
-      var s=`<div class="thumb">
-              <img class="thumbnail" src="1595428307.png">
-              <div class="timer">3:40</div>
-              <div class="title">
-                <img class="prof-icon" src="1595428307.png" alt="">
-                <p class="song-title">Chal Tere Ishq Mein Pad Jaate Hain - Gadar 2 | Utkarsh Sharma, Simrat...</p>
-                <p><i class="fa fa-ellipsis-v" style="font-size:24px"></i></p>
-              </div>
-              <div class="sub-title">
-                Ps Black Music
-              </div>
-              <div class="views">
-                162k views &#8226; 2 days ago
-              </div>
-            </div>`;
-            for(i=0;i<10;i++)
-            document.getElementById("loop").innerHTML+=s
+      var a=[1,2,3,4,5];
+      var s=0;
+    
+      for(i=0;i<5;i++)
+        {if (a[i]%2==1)
+           s=s+a[i];
+        
+        }
+     document.write(s);
     } 
   </script>
 </head>
