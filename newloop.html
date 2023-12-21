@@ -104,13 +104,31 @@
   </style>
   <script>
     function prac() {
-      var a = [1, 2, 3, 4, 5];
-      var s = "";
-      for (i = 0; i < 5; i++) {
-        if (a[i] % 2 == 1)
-          s = s + a[i];
+      var a = ['Chal Tere Ishq Mein Pad Jaate Hain - Gadar 2 | Utkarsh Sharma, Simrat...',
+        'here comes']
+      var t = ['10:15', '6:50']
+      var p = ['123.png', '1595428307.png']
+      var v = ['162k views &#8226; 2 days ago', '250k views &#8226; 8 days ago']
+      var j = [' Ps Black Music', 'Goldmines Dishoom']
+      var c = ['1595428307.png', 'app.png']
+      for (i = 0; i < 2; i++) {
+        var s = `<div class="thumb">
+                      <img class="thumbnail" src="`+ p[i] + `">
+                      <div class="timer">`+ t[i] + `</div>
+                      <div class="title">
+                          <img class="prof-icon" src="`+ c[i] + `" alt="">
+                          <p class="song-title">`+ a[i] + `</p>
+                          <p><i class="fa fa-ellipsis-v" style="font-size:24px"></i></p>
+                       </div>
+                       <div class="sub-title">
+                          `+ j[i] + `
+                       </div>
+                       <div class="views">
+                          `+ v[i] + `
+                       </div>
+                    </div>`;
+        document.getElementById('loop').innerHTML += s
       }
-      document.write(s);
     }
   </script>
 </head>
