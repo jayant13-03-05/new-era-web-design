@@ -103,18 +103,37 @@
     }
   </style>
   <script>
-    function prac()
-    {
-      var a=[1,2,3,4,5];
-      var s=0;
-    
-      for(i=0;i<5;i++)
-        {if (a[i]%2==1)
-           s=s+a[i];
-        
+   function prac()
+        {
+            var a=['Chal Tere Ishq Mein Pad Jaate Hain - Gadar 2 | Utkarsh Sharma, Simrat...',
+                   'Here comes','Mothers Public School','Beautiful Places','Houses','Tagore Houses']
+            var t=['4:10','5:20','2:30','10:30','35:10','9:20']
+            var c=['1595428307.png','123.png','logo.png','pics.jpeg','subhash.png','tagore.png']
+            var d=['1595428307.png','app.png','image.jpeg','gandhi.png','ballons.jpeg','41.jpeg']
+            var e=[' Ps Black Music','Goldmines','Ps Black Music','Goldmines','Ps Black Music','Goldmines']
+            var f=['162k views &#8226; 2 days ago','560k views &#8226; 5 days ago',
+                  '100k views &#8226; 9 days ago','500k views &#8226; 30 days ago',
+                  '210k views &#8226; 15 days ago','700k views &#8226; 20 days ago']
+                   for(i=0;i<6;i++)
+                   {
+            var s=`<div class="thumb">
+                      <img class="thumbnail" src="`+c[i]+`">
+                      <div class="timer">`+t[i]+`</div>
+                      <div class="title">
+                          <img class="prof-icon" src="`+d[i]+`" alt="">
+                          <p class="song-title">`+a[i]+`</p>
+                          <p><i class="fa fa-ellipsis-v" style="font-size:24px"></i></p>
+                       </div>
+                       <div class="sub-title">
+                           `+e[i]+`
+                       </div>
+                       <div class="views">
+                          `+f[i]+` 
+                       </div>
+                    </div>`;
+            document.getElementById('loop').innerHTML+=s
+                  }
         }
-     document.write(s);
-    } 
   </script>
 </head>
 
@@ -126,5 +145,4 @@
     </div>
   </div>
 </body>
-
 </html>
