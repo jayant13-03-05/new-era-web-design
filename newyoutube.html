@@ -10,17 +10,42 @@
   <title>Document</title>
   <script>
     function prac() {
-
+       var a=['https://www.youtube.com/embed/tgbNymZ7vqY','logo.png','pics.jpeg','123.png','gandhi.png','ballons.jpeg','image.jpeg']
+       var b=['October 1,2022','march 10,2023','november 11,2011','april 23,2005','february 2,2009','may 15,2008','june 17,2010']
+       var c=['usman','goldmines','sagar','sachin','puspendra','dark','vaasta']
+       var d=['1.7m views','2.7m views','4.6m views','3.5m views','10.1m views','41m views','34m views']
+      for(i=0;i<a.length;i++){
+      var s=`<div class="container">
+          <div class="row">
+            <div class="col-6">
+              <iframe  
+              class="img-thumbnail " style="margin-left: -50px;"
+              src="`+a[i]+`">
+              </iframe>
+    
+            </div>
+            <div class="col-6">
+              <p class="text-left font-weight-bold " style="margin-top: 5px;margin-left: -70px;font-size: 20px;">`+b[i]+`</p>
+              <p class="text-left  " style="margin-top: 5px;margin-left: -70px;font-size: 20px;">`+c[i]+`</p>
+              <p class="text-left  " style="margin-top: 5px;margin-left: -70px;font-size: 20px;">`+d[i]+` </p>
+            </div>
+          </div>
+        </div>`;
+        document.getElementById('videos').innerHTML+=s;
+      }
     }
   </script>
 </head>
 
-<body>
+<body onload="prac()">
 
   <div class="container-fluid px-lg-5">
     <div class="row mx-lg-n5">
       <div class="col-8 border bg-light">
-        <img src="ballons.jpeg" class="img-fluid w-100" style="height:70%;" alt="Responsive image">
+        <iframe class="img-fluid w-100" style="height:700px;"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+      
         <p class="font-weight-bold h3 my-2">ANIMAL: SATRANGA (Lyrical Video) Ranbir
           K,Rashmika|Sandeep|Arijit,Shreyas,Siddharth-Garima|Bhushan K</p>
         <div class="row">
@@ -52,23 +77,10 @@
             <button type="button" style="margin-left: 60px;" class="btn btn-dark rounded-circle"><i
                 class="fa fa-ellipsis-v" style="font-size:25px;"></i></button>
           </div>
-
         </div>
       </div>
       <div class="col-4 py-3 px-lg-5 border bg-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-6">
-              <img src="41.jpeg" alt="..." class="img-thumbnail " style="margin-left: -50px;">
-            </div>
-            <div class="col-6">
-              <p class="text-left font-weight-bold " style="margin-top: 5px;margin-left: -70px;font-size: 20px;">October
-                1, 2022</p>
-              <p class="text-left  " style="margin-top: 5px;margin-left: -70px;font-size: 20px;">Usman</p>
-              <p class="text-left  " style="margin-top: 5px;margin-left: -70px;font-size: 20px;">2.7M views </p>
-            </div>
-          </div>
-        </div>
+        <div id="videos"></div>
       </div>
     </div>
 
