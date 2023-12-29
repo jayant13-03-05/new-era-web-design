@@ -18,7 +18,7 @@
       var e = ['Rs . 999', 'Rs . 999', 'Rs . 999', 'Rs . 999']
       var f = ['(70%OFF)', '(70%OFF)', '(70%OFF)', '(70%OFF)']
       for (i = 0; i < a.length; i++) {
-        var s = `<div class="col-sm"><div class="col-12 col-md-8">
+        var s = `<div class="col-sm-3"><div class="col-12 col-md-12">
             <img src="`+ a[i] + `" alt="..." class="img-thumbnail" style="height: 450px; width: 350px;">
             <p class="text-left font-weight-bold h5">`+ b[i] + `</p>
             <p class="text-left h6">`+ c[i] + `</p>
@@ -27,31 +27,20 @@
         document.getElementById('photos').innerHTML += s
       }
     }
+    function test()
+    {
+      prac()
+      prac()
+      prac()
+    }
+
   </script>
 </head>
 
-<body onload="prac()">
+<body onload="test()">
   <div class="container-fluid">
-    <div class="row">
-      <div id="photos"></div>
-      <div class="col-sm">
-        <div class="col-12 col-md-12">
-          <img src="image.jpeg" alt="..." class="img-thumbnail" style="height: 450px; width: 350px;">
-          <p class="text-left font-weight-bold h5">Being Human</p>
-          <p class="text-left h6">Men Typography T-Shirt</p>
-          <p class="text-left  h6"> <span class="font-weight-bold">Rs . 299</span> <del>Rs . 999</del> <span
-              class="text-danger">(70%OFF)</span></p>
-        </div>
-      </div>
-      <div class="col-sm">
-        One of three columns
-      </div>
-      <div class="col-sm">
-        One of three columns
-      </div>
-      <div class="col-sm">
-        One of three columns
-      </div>
+    <div class="row mx-5" id="photos">
+      
     </div>
   </div>
 
@@ -60,11 +49,7 @@
       <div class="col-6 col-md-4">.col-12 .col-md-8</div>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-6 col-md-4">.col-12 .col-md-8</div>
-    </div>
-  </div>
+  
 </body>
 
 </html>

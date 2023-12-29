@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -49,7 +53,7 @@
     .thumbnail{
       width: 100%;
       border-radius: 20px;
-      height: 220px;
+      height: 300px;
     }
     .prof-icon{
       height: 40px;
@@ -91,8 +95,13 @@
     <script>
         function repeatVideos()
         {
+          var a=['il7UhZYPGNg','','','']
             var s=`<div class="thumb">
-                      <img class="thumbnail" src="1595428307.png">
+              <iframe  
+              class="img-thumbnail thumbnail"
+              src="https://www.youtube.com/embed/`+ a[0] + `">
+              </iframe>
+                      
                       <div class="timer">3:40</div>
                       <div class="title">
                           <img class="prof-icon" src="1595428307.png" alt="">
