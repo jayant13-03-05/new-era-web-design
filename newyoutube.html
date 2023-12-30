@@ -10,6 +10,7 @@
   <title>Document</title>
   <script>
     function prac() {
+      vide.innerHTML=`<iframe class="img-fluid w-100" style="height:800px;" src="https://www.youtube.com/embed/`+querySt("k")+`"> </iframe>`
       var a = ['il7UhZYPGNg', 'zCRUPWDIgYM', 'bwen5lsv23A', 'nGawAhRjtoA', 'drnBMAEA3AM', 'GeIHvhnQbbI', 'f28MJ7IMsS8']
       var b = ['October 1,2022', 'march 10,2023', 'november 11,2011', 'april 23,2005', 'february 2,2009', 'may 15,2008', 'june 17,2010']
       var c = ['usman', 'goldmines', 'sagar', 'sachin', 'puspendra', 'dark', 'vaasta']
@@ -34,6 +35,16 @@
         document.getElementById('videos').innerHTML += s;
       }
     }
+    function querySt(ji) {
+    hu = window.location.search.substring(1);
+    gy = hu.split("&");
+    for (i=0;i<gy.length;i++) {
+        ft = gy[i].split("=");
+        if (ft[0] == ji) {
+            return ft[1];
+        }
+    }
+}
   </script>
 </head>
 
@@ -42,9 +53,9 @@
   <div class="container-fluid px-lg-5">
     <div class="row mx-lg-n5">
       <div class="col-8 border bg-light">
-        <iframe class="img-fluid w-100" style="height:800px;" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-        </iframe>
-
+        <div id="vide">
+        
+      </div>
         <p class="font-weight-bold h3 my-2">ANIMAL: SATRANGA (Lyrical Video) Ranbir
           K,Rashmika|Sandeep|Arijit,Shreyas,Siddharth-Garima|Bhushan K</p>
         <div class="row">
