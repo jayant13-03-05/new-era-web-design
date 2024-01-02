@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
       margin-left: 210px;
       margin-top: 60px;
       font-family: Arial, Helvetica, sans-serif;
       height: 2000px;
     }
-    .main{
+
+    .main {
       position: relative;
     }
-    .header{
+
+    .header {
       background-color: red;
       position: fixed;
       top: 0;
@@ -28,7 +31,8 @@
       height: 50px;
       z-index: 10000;
     }
-    .sidebar{
+
+    .sidebar {
       background-color: blue;
       position: fixed;
       top: 0;
@@ -38,67 +42,75 @@
       margin-top: 50px;
 
     }
-    .videos{
-     
+
+    .videos {
+
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 20px;
       row-gap: 20px;
       z-index: 5000;
     }
-    .thumb{
+
+    .thumb {
       position: relative;
       height: auto;
     }
-    .thumbnail{
+
+    .thumbnail {
       width: 100%;
       border-radius: 20px;
       height: 300px;
     }
-    .prof-icon{
+
+    .prof-icon {
       height: 40px;
-      width:40px;
+      width: 40px;
       border-radius: 40px;
     }
-    .title{
+
+    .title {
       display: grid;
-      grid-template-columns:50px 1fr 20px ;
+      grid-template-columns: 50px 1fr 20px;
       column-gap: 10px;
       align-items: center;
     }
-    .song-title{
+
+    .song-title {
       font-size: 18px;
       font-weight: bold;
-      padding: 0;margin: 0;
-      color:rgb(65, 60, 60)
+      padding: 0;
+      margin: 0;
+      color: rgb(65, 60, 60)
     }
-    .sub-title{
+
+    .sub-title {
       padding-left: 60px;
-      color:rgb(75, 72, 72)
+      color: rgb(75, 72, 72)
     }
-    .views{
+
+    .views {
       padding-left: 60px;
-      
+
     }
-    .timer{
+
+    .timer {
       position: absolute;
       right: 20px;
-      top:60%;
+      top: 60%;
       background-color: rgba(0, 0, 0, 0.8);
-      color:white;
+      color: white;
       padding: 2px;
       width: 40px;
       border-radius: 5px;
       text-align: center;
     }
-    </style>
-    <script>
-        function repeatVideos()
-        {
-          var a=['il7UhZYPGNg','zCRUPWDIgYM','bwen5lsv23A','nGawAhRjtoA']
-          for(i=0;i<a.length;i++)
-          {
-            var s=`<div class="thumb">
+  </style>
+  <script>
+    function repeatVideos() {
+      var a = ['il7UhZYPGNg', 'zCRUPWDIgYM', 'bwen5lsv23A', 'nGawAhRjtoA']
+      for (i = 0; i < a.length; i++) {
+        var s = `<div class="thumb">
               <iframe  
               class="img-thumbnail thumbnail"
               src="https://www.youtube.com/embed/`+ a[i] + `">
@@ -108,7 +120,7 @@
                       <div class="title">
                           <img class="prof-icon" src="1595428307.png" alt="">
                           <p class="song-title">
-                            <a href="http://127.0.0.1:5500/newyoutube.html?k=`+a[i]+`">
+                            <a href="http://127.0.0.1:5500/newyoutube.html?k=`+ a[i] + `">
                               Chal Tere Ishq Mein Pad Jaate Hain - Gadar 2 | Utkarsh Sharma, Simrat...
                             </a>
                             </p>
@@ -122,20 +134,18 @@
                           162k views &#8226; 2 days ago 
                        </div>
                     </div>`;
-            
-            document.getElementById('videos').innerHTML+=s
-                  }
-        }
-    </script>
-</head>
-<body onload="repeatVideos()">
-    <div class="main">
-        <div class="videos" id="videos">
-          
 
-          
-        </div>
-          
-          </div>
+        document.getElementById('videos').innerHTML += s
+      }
+    }
+  </script>
+</head>
+
+<body onload="repeatVideos()">
+  <div class="main">
+    <div class="videos" id="videos">
+    </div>
+  </div>
 </body>
+
 </html>
